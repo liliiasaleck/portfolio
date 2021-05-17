@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
   ListItem,
   IconButton,
   ListItemText,
-  Avatar,
   Divider,
   List,
   Typography,
@@ -20,13 +20,12 @@ import {
   Apps,
   ContactMail,
 } from "@material-ui/icons";
-import avatar from "../images/avatar.png";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 
 const useStyles = makeStyles((theme) => ({
   sliderContainer: {
     width: 250,
-    background: "#DC143C",
+    background: "linear-gradient(to left, rgb(244, 92, 67), rgb(234, 46, 68))",
     height: "100%",
   },
   listItem: {
@@ -38,10 +37,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/about",
   },
   {
     listIcon: <Apps />,
@@ -74,7 +75,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -93,9 +94,9 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "black" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "white" }} />
+              <ArrowBack style={{ color: "rgb(234, 46, 68)" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "#DC143C" }}>
+            <Typography variant="h5" style={{ color: "white" }}>
               Portfolio
             </Typography>
             <MobileRightMenuSlider
