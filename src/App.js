@@ -4,13 +4,13 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <CssBaseline />
       <Home />
     </>
   );
-}
+};
 
 export default App;
