@@ -13,13 +13,10 @@ import {
   makeStyles,
   ListItemIcon,
 } from "@material-ui/core";
-import {
-  ArrowBack,
-  AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-} from "@material-ui/icons";
+import { Home, Apps } from "@material-ui/icons";
+import MenuIcon from "@material-ui/icons/Menu";
+import ComputerIcon from "@material-ui/icons/Computer";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 
 const useStyles = makeStyles((theme) => ({
@@ -40,8 +37,8 @@ const menuItems = [
     listPath: "/",
   },
   {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
+    listIcon: <ComputerIcon />,
+    listText: "Skills",
     listPath: "/about",
   },
   {
@@ -49,7 +46,7 @@ const menuItems = [
     listText: "Portfolio",
   },
   {
-    listIcon: <ContactMail />,
+    listIcon: <MailOutlineIcon />,
     listText: "Contacts",
   },
 ];
@@ -70,7 +67,7 @@ const Navbar = () => {
       onClick={toggleSlider(slider, false)}
     >
       <Typography variant="h5" style={{ color: "white" }}>
-        Menu
+        Liliia Saleck
       </Typography>
       <Divider />
       <List>
@@ -94,7 +91,7 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "black" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "rgb(234, 46, 68)" }} />
+              <MenuIcon style={{ color: "rgb(234, 46, 68)" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "white" }}>
               Portfolio
