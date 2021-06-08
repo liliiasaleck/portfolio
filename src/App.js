@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./components/Home";
+import Home from "./view/Home";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import "./App.css";
-import About from "./components/About";
+import About from "./view/About";
 import { Route } from "react-router-dom";
 
 const App = () => {
