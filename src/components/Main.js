@@ -2,14 +2,20 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { Typography, Box } from "@material-ui/core";
 import Typed from "react-typed";
+import Icons from "./Icons";
+import Links from "./Links";
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    color: "#black",
+    color: "#202020	",
+    fontSize: "7rem",
+    letterSpacing: "0.3rem",
   },
   subtitle: {
     marginBottom: "3rem",
-    color: "white",
+    color: "rgba(255, 255, 255, 0.9)",
+    fontSize: "1.6rem",
+    letterSpacing: "0.1rem",
   },
   container: {
     position: "absolute",
@@ -22,24 +28,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = () => {
+const Main = () => {
   const classes = useStyles();
   return (
     <Box className={classes.container}>
-      <Typography className={classes.title} variant="h2">
+      <Typography className={classes.title}>
         <Typed strings={["Liliia Saleck"]} timeSpeed={40} />
       </Typography>
       <br />
-      <Typography className={classes.subtitle} variant="h5">
+      <Typography className={classes.subtitle}>
         <Typed
-          strings={["Frontend Developer", "React", "Typescript"]}
+          strings={["Junior Frontend Developer", "React", "Typescript"]}
           timeSpeed={40}
           backSpeed={60}
           loop
         />
       </Typography>
+      <Icons />
+      <Links />
     </Box>
   );
 };
 
-export default Header;
+export default Main;

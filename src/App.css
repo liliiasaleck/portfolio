@@ -1,4 +1,5 @@
 body {
   background: linear-gradient(to left, rgb(244, 92, 67), rgb(234, 46, 68));
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
 }

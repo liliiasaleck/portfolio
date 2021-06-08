@@ -18,6 +18,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ComputerIcon from "@material-ui/icons/Computer";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
+import Logo from "./Logo";
 
 const useStyles = makeStyles((theme) => ({
   sliderContainer: {
@@ -27,6 +28,13 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     color: "black",
+  },
+  toolbar: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  link: {
+    hover: "none",
   },
 }));
 
@@ -66,9 +74,6 @@ const Navbar = () => {
       component="div"
       onClick={toggleSlider(slider, false)}
     >
-      <Typography variant="h5" style={{ color: "white" }}>
-        Liliia Saleck
-      </Typography>
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
@@ -89,13 +94,11 @@ const Navbar = () => {
     <>
       <Box component="nav">
         <AppBar position="static" style={{ background: "black" }}>
-          <Toolbar>
+          <Toolbar className={classes.toolbar}>
+            <Logo />
             <IconButton onClick={toggleSlider("right", true)}>
               <MenuIcon style={{ color: "rgb(234, 46, 68)" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "white" }}>
-              Portfolio
-            </Typography>
             <MobileRightMenuSlider
               anchor="right"
               open={state.right}
