@@ -8,7 +8,7 @@ import Links from "./Links";
 const useStyles = makeStyles((theme) => ({
   title: {
     color: "#202020	",
-    fontSize: "7rem",
+    fontSize: "6rem",
     letterSpacing: "0.3rem",
   },
   subtitle: {
