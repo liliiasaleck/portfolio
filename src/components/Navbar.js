@@ -50,11 +50,11 @@ const menuItems = [
     listPath: "/portfolio",
 
   },
-  {
-    listIcon: <ComputerIcon />,
-    listText: "Skills",
-    listPath: "/skills",
-  },
+  // {
+  //   listIcon: <ComputerIcon />,
+  //   listText: "Skills",
+  //   listPath: "/skills",
+  // },
   {
     listIcon: <MailOutlineIcon />,
     listText: "Contacts",
