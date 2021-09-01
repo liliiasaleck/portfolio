@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,kDAAwE,CACxE,kCAAoC,CACpC,wBACF","file":"main.ace1c0fb.chunk.css","sourcesContent":["body {\n  background: linear-gradient(to left, rgb(244, 92, 67), rgb(234, 46, 68));\n  font-family: \"Open Sans\", sans-serif;\n  text-transform: uppercase;\n}\n"]}

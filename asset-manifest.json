@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ace1c0fb.chunk.css",
+    "main.js": "/portfolio/static/js/main.7ebb95ba.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7ebb95ba.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
+    "static/js/2.2e29dfff.chunk.js": "/portfolio/static/js/2.2e29dfff.chunk.js",
+    "static/js/2.2e29dfff.chunk.js.map": "/portfolio/static/js/2.2e29dfff.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.ace1c0fb.chunk.css.map": "/portfolio/static/css/main.ace1c0fb.chunk.css.map",
+    "static/js/2.2e29dfff.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2e29dfff.chunk.js.LICENSE.txt",
+    "static/media/jobshop.1a85dc88.png": "/portfolio/static/media/jobshop.1a85dc88.png",
+    "static/media/portfolio.ed817998.png": "/portfolio/static/media/portfolio.ed817998.png",
+    "static/media/skillshop.64af054d.png": "/portfolio/static/media/skillshop.64af054d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43d9a0ba.js",
+    "static/js/2.2e29dfff.chunk.js",
+    "static/css/main.ace1c0fb.chunk.css",
+    "static/js/main.7ebb95ba.chunk.js"
+  ]
+}
