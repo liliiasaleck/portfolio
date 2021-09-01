@@ -24,8 +24,8 @@ const Portfolio = () => {
   return (
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
-      <Grid container justify="center" >
-        <Grid item xs={12} sm={8} md={6}>
+      <Grid container  justify="center"  direction="row">
+        <Grid item xs={4}>
           <Card className={classes.cardContainer} >
             <CardActionArea>
               <CardMedia
@@ -36,16 +36,13 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 1
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Id dolore reprehenderit exercitation commodo anim do amet ex dolor tempor quis pariatur amet. Lorem mollit exercitation ad excepteur consectetur Lorem esse. Quis consequat enim ullamco ad occaecat aliqua id sunt aliqua ex Lorem magna. In fugiat esse aute dolore deserunt aute veniam.
+                Job search marketplace | React.js | Nest.js | Redux
                 </Typography>
               </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button size="small" color="primary" href="https://github.com/liliiasaleck/job_shop_frontend">
+                  Github 
                 </Button>
                 <Button size="small" color="primary">
                   Live Demo
@@ -53,7 +50,7 @@ const Portfolio = () => {
               </CardActions>
           </Card>         
         </Grid>
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={4} >
           <Card className={classes.cardContainer} >
             <CardActionArea>
               <CardMedia
@@ -64,16 +61,13 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 2
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Id dolore reprehenderit exercitation commodo anim do amet ex dolor tempor quis pariatur amet. Lorem mollit exercitation ad excepteur consectetur Lorem esse. Quis consequat enim ullamco ad occaecat aliqua id sunt aliqua ex Lorem magna. In fugiat esse aute dolore deserunt aute veniam.
+                Portfolio site | React.js | Material UI
                 </Typography>
               </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button size="small" color="primary" href="https://github.com/liliiasaleck/portfolio">
+                  Github
                 </Button>
                 <Button size="small" color="primary">
                   Live Demo
@@ -81,7 +75,7 @@ const Portfolio = () => {
               </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={4} >
           <Card className={classes.cardContainer} >
             <CardActionArea>
               <CardMedia
@@ -92,51 +86,19 @@ const Portfolio = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 3
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Id dolore reprehenderit exercitation commodo anim do amet ex dolor tempor quis pariatur amet. Lorem mollit exercitation ad excepteur consectetur Lorem esse. Quis consequat enim ullamco ad occaecat aliqua id sunt aliqua ex Lorem magna. In fugiat esse aute dolore deserunt aute veniam.
+                SkillShop marketplace | React.js | Firebase
                 </Typography>
               </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
+                <Button size="small" color="primary" href="https://github.com/liliiasaleck/jfddr2-unasdziala-app">
+                  Github 
                 </Button>
                 <Button size="small" color="primary">
                   Live Demo
                 </Button>
               </CardActions>
           </Card>   
-        </Grid>
-        <Grid item xs={12} sm={8} md={6}>
-          <Card className={classes.cardContainer} >
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Project 4"
-                height="140"
-                // image={project4}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Project 4
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Id dolore reprehenderit exercitation commodo anim do amet ex dolor tempor quis pariatur amet. Lorem mollit exercitation ad excepteur consectetur Lorem esse. Quis consequat enim ullamco ad occaecat aliqua id sunt aliqua ex Lorem magna. In fugiat esse aute dolore deserunt aute veniam.
-                </Typography>
-              </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
-          </Card>
-          
         </Grid>
       </Grid>
     </Box>
